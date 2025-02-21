@@ -1,0 +1,128 @@
+local library = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ShaddowScripts/Main/main/Library"))()
+
+local Main = library:CreateWindow("Killblade HUB","Crimson")
+
+local tab = Main:CreateTab("Aimbot")
+local tab2 = Main:CreateTab("Other")
+local tab3 = Main:CreateTab("ESP")
+
+
+tab:CreateButton("Azure",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
+end)
+
+tab:CreateButton("Legit/Rage",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/pid4k/scripts/main/universalaimbot.lua', true))()
+end)
+
+tab:CreateButton("PC(E)",function()
+    getgenv().Camlock_Settings = {
+        Prediction = 0.0,
+        AimPart = "Head",
+        Key = "e",
+        AutoPrediction = false,
+        Notification = true,
+        Button = false,
+        AntiGroundShots = true,
+        UnderGroundResolver = true,
+
+        -- DO NOT TOUCH THIS OR THE CAMLOCK WILL NOT WORK --
+        Version = "2.5.1",
+        Credits = "space_0999",
+        DiscordServer = "discord.gg/SKhamGzTdn"
+    }
+
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/elxocasXD/Trip-Hub/main/Scripts/Cam%20Lock.lua'))()
+end)
+
+tab:CreateButton("Mobile",function()
+    getgenv().Camlock_Settings = {
+        Prediction = 0.0,
+        AimPart = "Head",
+        Key = "e",
+        AutoPrediction = false,
+        Notification = true,
+        Button = true,
+        AntiGroundShots = true,
+        UnderGroundResolver = true,
+
+        -- DO NOT TOUCH THIS OR THE CAMLOCK WILL NOT WORK --
+        Version = "2.5.1",
+        Credits = "space_0999",
+        DiscordServer = "discord.gg/SKhamGzTdn"
+    }
+
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/elxocasXD/Trip-Hub/main/Scripts/Cam%20Lock.lua'))()
+end)
+
+
+tab2:CreateButton("InfYield",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+tab2:CreateButton("Shiftlock(M)",function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Mobile-Shiftlock-Official-19126"))()
+end)
+
+tab2:CreateButton("Fullbright(H)",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Qwoqeex/KBHUBCreator/refs/heads/main/Fullbright"))()
+end)
+
+tab2:CreateButton("Keyboard",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+tab2:CreateButton("AntiRecoil",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Qwoqeex/KBHUBCreator/refs/heads/main/anti%20recoil'))()
+end)
+
+tab2:CreateButton("AntiRecoil(M)",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Qwoqeex/KBHUBCreator/refs/heads/main/mobile%20anti%20recoil'))()
+end)
+
+tab2:CreateButton("Visible SZ",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Qwoqeex/KBHUBCreator/refs/heads/main/SafeZoneVisible'))()
+end)
+
+tab2:CreateButton("Del XMAS",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Qwoqeex/KBHUBCreator/refs/heads/main/Delete%20XMAS'))()
+end)
+
+tab2:CreateButton("TP(Y)",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Qwoqeex/KBHUBCreator/refs/heads/main/tp%2050%20studs'))()
+end)
+
+tab2:CreateButton("TP Mobile",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Qwoqeex/KBHUBCreator/refs/heads/main/mobile%20tp'))()
+end)
+
+
+tab2:CreateButton("AntiTP(G)",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Qwoqeex/KBHUBCreator/refs/heads/main/Anti%20CFrame%20Teleport'))
+end)
+
+tab2:CreateSlider("FOV",70,120,function(FOV)
+    workspace.Camera.FieldOfView = (FOV)
+end)
+
+tab2:CreateButton("TPWalk(T)",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Qwoqeex/KBHUBCreator/refs/heads/main/TPWalk%20on'))()
+end)
+
+tab3:CreateButton("Artefacts(X)",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Qwoqeex/KBHUBCreator/refs/heads/main/Artefact%20ESP'))()
+end)
+
+tab3:CreateButton("Players(B)",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Qwoqeex/KBHUBCreator/refs/heads/main/ESP%20Players'))()
+end)
+
+tab3:CreateButton("Weapon(V)",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Qwoqeex/KBHUBCreator/refs/heads/main/ESP%20Guns'))()
+end)
+
+tab3:CreateButton("Krovosos(N)",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Qwoqeex/KBHUBCreator/refs/heads/main/Krovosos%20ESP'))()
+end)
